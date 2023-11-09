@@ -1,0 +1,17 @@
+name: Feature Reusable workflow 
+
+on:
+  workflow_call:
+    inputs:
+      var1:
+        required: false
+        type: string
+    
+jobs:
+  Explore-GitHub-Actions-Reusable-workflow:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: test 
+        shell: bash 
+        run: echo "feature"
