@@ -4,14 +4,15 @@ on:
   workflow_call:
     inputs:
       var1:
-        required: false
+        required: true
         type: string
+        default: "test"
     
 jobs:
-  Explore-GitHub-Actions-Reusable-workflow:
+  called-workflow:
     runs-on: ubuntu-latest
-    
     steps:
-      - name: test 
-        shell: bash 
-        run: echo "feature branch, environment selected -  ${{ github.event.inputs.var1 }} " 
+      - name: Print the environment variables
+        run: |
+          echo ${{ inputs.var1 }}
+          
