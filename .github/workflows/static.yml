@@ -1,0 +1,20 @@
+name: GH Reusable workflow 
+
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        type: choice
+        description: Branch
+        options: 
+        - master
+        - dev
+        - feature
+      message:
+        required: true
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello"
+  
