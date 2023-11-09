@@ -14,4 +14,4 @@ jobs:
     steps:
       - name: test 
         shell: bash 
-        run: echo "feature"
+        run: echo "feature branch, environment selected -  ${{ github.event.inputs.var1 }} " 
