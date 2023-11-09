@@ -11,7 +11,8 @@ on:
         - QA
         - Stage
 jobs:
-  Explore-GitHub-Actions:
-      if: github.ref == 'refs/heads/feature'
-      uses: selvan123/HelloWorld/.github/workflows/feature.yml@master    
+  if: github.ref == 'refs/heads/feature'
+  Explore-GitHub-Actions:  
+  uses: selvan123/HelloWorld/.github/workflows/feature.yml@master    
+
   
