@@ -14,13 +14,13 @@ jobs:
   
     GH-Dev:  
         if: github.ref == 'refs/heads/dev'
-        uses: selvan123/HelloWorld/.github/workflows/dev.yml@master   
+        uses: selvan123/HelloWorld/.github/workflows/dev.yml@feature   
         with:
           var1 : ${{ github.event.inputs.environment }}
   
     GH-Feature:  
         if: github.ref == 'refs/heads/feature'
-        uses: selvan123/HelloWorld/.github/workflows/feature.yml@master    
+        uses: selvan123/HelloWorld/.github/workflows/feature.yml@feature    
         with:
           var1 : ${{ github.event.inputs.environment }}
     
