@@ -16,5 +16,6 @@ jobs:
     
     steps:
       - name: test 
-      - run: echo "Hello"
+        shell: bash 
+        run: echo "Hello"
   
