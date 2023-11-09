@@ -12,11 +12,5 @@ on:
         - feature
 jobs:
   Explore-GitHub-Actions:
-    runs-on: ubuntu-latest
-    
-    steps:
-      - uses: actions/checkout@v1
-      - name: test 
-        if: github.ref == 'refs/heads/master'
-        uses: selvan123/HelloWorld/.github/workflows/dev.yml@master    
+      uses: selvan123/HelloWorld/.github/workflows/dev.yml@master    
   
