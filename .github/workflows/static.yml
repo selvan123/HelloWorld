@@ -5,13 +5,13 @@ on:
     inputs:
       name:
         type: choice
-        description: Branch
+        description: env.
         options: 
-        - master
-        - dev
-        - feature
+        - Dev
+        - QA
+        - Stage
 jobs:
   Explore-GitHub-Actions:
-      if: github.ref == 'refs/heads/dev'
-      uses: selvan123/HelloWorld/.github/workflows/dev.yml@master    
+      if: github.ref == 'refs/heads/feature'
+      uses: selvan123/HelloWorld/.github/workflows/feature.yml@master    
   
