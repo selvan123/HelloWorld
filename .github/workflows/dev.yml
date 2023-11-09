@@ -6,6 +6,7 @@ on:
       var1:
         required: true
         type: string
+        default: "test"
     
 jobs:
   Explore-GitHub-Actions-Reusable-workflow:
