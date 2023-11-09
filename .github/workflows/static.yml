@@ -17,7 +17,7 @@ jobs:
         #uses: selvan123/HelloWorld/.github/workflows/dev.yml@feature   
         uses: ./.github/workflows/dev.yml
         with:
-          var1 : ${{ github.event.inputs.environment }}
+          var2 : ${{ github.event.inputs.environment }}
   
     GH-Feature:  
         if: github.ref == 'refs/heads/feature'
