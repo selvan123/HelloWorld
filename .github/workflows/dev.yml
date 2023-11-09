@@ -15,4 +15,4 @@ jobs:
       - name: Print the environment variables
         run: |
           echo ${{ inputs.var1 }}
-          echo ${{ inputs.DAY_OF_WEEK }}
+          
