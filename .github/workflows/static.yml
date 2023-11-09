@@ -17,6 +17,6 @@ jobs:
     steps:
       - name: test 
         if: github.ref == 'refs/heads/master'
-        shell: bash 
-        run: echo "Hello"
+        uses: selvan123/HelloWorld/actions/workflows/dev.yml@master
+        
   
