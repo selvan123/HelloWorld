@@ -9,10 +9,13 @@ on:
         default: "test"
     
 jobs:
-  Explore-GitHub-Actions-Reusable-workflow:
+  called-workflow:
     runs-on: ubuntu-latest
-    
     steps:
-      - name: test 
-        shell: bash 
-        run: echo "Dev branch, environment selected -  ${{ inputs.var2 }} " 
+      - name: Check out Repository
+        uses: actions/checkout@v3
+
+      - name: Print the environment variables
+        run: |
+          echo ${{ inputs.var1 }}
+          echo ${{ inputs.DAY_OF_WEEK }}
