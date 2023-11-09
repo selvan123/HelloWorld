@@ -1,0 +1,20 @@
+name: Dev Reusable workflow 
+
+on:
+  workflow_call:
+    inputs:
+      config-path:
+        required: true
+        type: string
+    secrets:
+      token:
+        required: true
+
+jobs:
+  Explore-GitHub-Actions-Reusable-workflow:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: test 
+        shell: bash 
+        run: echo "Dev"
