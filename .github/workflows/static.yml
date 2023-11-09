@@ -12,5 +12,6 @@ on:
         - feature
 jobs:
   Explore-GitHub-Actions:
+      if: github.ref == 'refs/heads/master'
       uses: selvan123/HelloWorld/.github/workflows/dev.yml@master    
   
