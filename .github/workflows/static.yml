@@ -10,11 +10,11 @@ on:
         - master
         - dev
         - feature
-      message:
-        required: true
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
+    
     steps:
+      - name: test 
       - run: echo "Hello"
   
