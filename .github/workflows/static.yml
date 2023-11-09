@@ -1,4 +1,4 @@
-name: GH Reusable workflow 
+name: GH  workflow 
 
 on:
   workflow_dispatch:
