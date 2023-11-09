@@ -3,13 +3,10 @@ name: Dev Reusable workflow
 on:
   workflow_call:
     inputs:
-      config-path:
+      var1:
         required: false
         type: string
-    secrets:
-      token:
-        required: false
-
+    
 jobs:
   Explore-GitHub-Actions-Reusable-workflow:
     runs-on: ubuntu-latest
