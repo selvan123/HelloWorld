@@ -1,6 +1,12 @@
 name: Parent Workflow
 
-on: workflow_dispatch 
+on: 
+   workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Enter Value'
+        required: true
+        default: 'staging'
 
 jobs:
   build-linux:
