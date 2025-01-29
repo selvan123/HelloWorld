@@ -10,7 +10,7 @@ jobs:
     
     - name: call repository dispatch workflow 
       run: |
-      curl -H "Authorization: $ {{ secrets.GHToken }}" \
-      -H 'Accept: application/vnd.github.everest-preview+json' \
-      "https://api.github.com/repos/selvan123/GH_Metrics/dispatches" \
-      -d '{"event_type": "awesomeness", "client_payload": {"foo": "bar"}}'
+        curl -H "Authorization: $ {{ secrets.GHToken }}" \
+        -H 'Accept: application/vnd.github.everest-preview+json' \
+        "https://api.github.com/repos/selvan123/GH_Metrics/dispatches" \
+        -d '{"event_type": "awesomeness", "client_payload": {"foo": "bar"}}'
